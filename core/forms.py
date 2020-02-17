@@ -25,3 +25,10 @@ class CustomSignupForm(SignupForm):
             user.last_name = self.cleaned_data['last_name']
             user.save()
             return user
+
+        def __init__(self, *args, **kwargs):
+            super(CustomSignupForm, self).__init__(*args, **kwargs)
+            for fieldname, field in self.fields.items():
+                field.widget.attrs.update({
+                'class': 'signup'
+                })
