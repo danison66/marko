@@ -1,0 +1,17 @@
+.grid--two{
+    max-width:$grid-width ;
+    margin: 0 auto;
+    display: grid;
+    gap: $gutter-horizontal;
+    grid-template-columns:repeat(2,calc((100% - #{$gutter-horizontal}) / 2)) ;
+}
+
+.grid--four{
+    max-width:$grid-width ;
+    margin: 0 auto;
+    display: grid;
+    gap: $gutter-horizontal;
+    grid-template-columns:repeat(4,calc((100% - 3 * #{$gutter-horizontal}) / 4)) ;
+}
+
+
