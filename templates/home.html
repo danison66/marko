@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Index page</h1>
+    {% for item in items %}
+      <h1>{{ item.title }}</h1><br>
+      <p>{{ item.description }}</p><br>
+      <img src="{{ item.image.url }}" width="150" height="150"><br>
+    {% endfor %}
+  </body>
+</html>
