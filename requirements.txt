@@ -5,7 +5,7 @@ chardet==3.0.4
 cloudinary==1.19.1
 colorama==0.4.1
 defusedxml==0.6.0
-Django==2.2
+Django==2.2.21
 django-allauth==0.40.0
 django-countries==5.5
 django-crispy-forms==1.7.2
